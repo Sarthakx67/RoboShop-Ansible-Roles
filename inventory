@@ -3,24 +3,24 @@ ansible_user=ec2-user
 ansible_ssh_private_key_file=EC2-key.pem
 
 [mongodb]
-mongodb-node ansible_host=172.31.6.228
+mongodb.stallions.space
 [catalogue]
-catalogue-node ansible_host=172.31.15.253
+catalogue.stallions.space
 [user]
-user-node ansible_host=172.31.14.195
+user.stallions.space
 [redis]
-redis-node ansible_host=172.31.0.45
+redis.stallions.space
 [cart]
-cart-node ansible_host=172.31.12.67
+cart.stallions.space
 [mysql]
-mysql-node ansible_host=172.31.39.184
+mysql.stallions.space
 [shipping]
-shipping-node ansible_host=172.31.35.159
+shipping.stallions.space
 [rabbitmq]
-rabbitmq-node ansible_host=172.31.35.133
+rabbitmq.stallions.space
 [payment]
-payment-node ansible_host=172.31.38.231 
+payment.stallions.space 
 [dispatch]
-dispatch-node ansible_host=172.31.45.195
+dispatch.stallions.space
 [web-server]
-web-server-node ansible_host=172.31.42.132
+web.stallions.space
