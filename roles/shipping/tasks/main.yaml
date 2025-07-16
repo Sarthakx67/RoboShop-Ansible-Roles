@@ -5,6 +5,7 @@
       - maven
       - mysql
       - python3-PyMySQL
+      - unzip
     state: present
 
 - name: Create Roboshop application user
