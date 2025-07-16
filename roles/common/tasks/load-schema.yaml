@@ -9,5 +9,5 @@
     state: installed 
 
 - name: load {{component}} data
-  ansible.builtin.command: mongo --host 172.31.6.228 < /app/schema/{{component}}.js
+  ansible.builtin.command: mongo --host mongodb.stallions.space < /app/schema/{{component}}.js
   ignore_errors: yes

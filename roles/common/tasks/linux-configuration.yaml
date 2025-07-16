@@ -2,5 +2,7 @@
   ansible.builtin.yum:
     name: epel-release
     state: installed
-- name: Temporarily set SELinux to permissive mode
-  ansible.builtin.command: setenforce 0
+- name: Set SELinux to permissive mode permanently
+  ansible.posix.selinux:
+    policy: targeted
+    state: permissive
