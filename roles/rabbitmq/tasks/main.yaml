@@ -17,6 +17,7 @@
 
 - name: create user for the application.
   ansible.builtin.command: rabbitmqctl add_user roboshop roboshop123
+  ignore_errors: true
 
 - name: set_permissions rabbitmq
   ansible.builtin.command: rabbitmqctl set_permissions -p / roboshop ".*" ".*" ".*"
