@@ -53,14 +53,14 @@ graph TD
 
 1. **Clone or reference this module:**
 ```bash
-git clone <repository-url>
+git clone https://github.com/Sarthakx67/RoboShop-Ansible-Roles.git
 cd terraform-aws-security-group-module
 ```
 
 2. **Use the module in your Terraform configuration:**
 ```hcl
 module "web_security_group" {
-  source = "./path-to-this-module"
+  source = "git::https://github.com/Sarthakx67/RoboShop-Ansible-Roles.git"
   
   sg_name        = "web-server-sg"
   sg_description = "Security group for web servers"
